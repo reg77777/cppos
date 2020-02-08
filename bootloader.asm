@@ -58,14 +58,8 @@ loop1:
   cmp ch,c
   jb loop1
 
+mov [0x0ff0],ch
 jmp 0xc200
-
-msg:
-	db 0x0a,0x0a
-	db "load error"
-	db 0x0a
-	db 0
 
 times 0x7dfe-0x7c00-($-$$) db 0
 db 0x55,0xaa
-
