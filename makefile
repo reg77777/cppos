@@ -1,4 +1,4 @@
-BOOTPACK=main.o
+BOOTPACK=main.o includes/screen.o
 
 head.bin: head.asm
 	nasm $^ -o $@
@@ -24,7 +24,8 @@ run: os.img
 	make clean
 
 clean:
-	rm -rf *.sys
-	rm -rf *.o
-	rm -rf *.img
-	rm -rf *.bin
+	rm -f *.sys
+	rm -f *.o
+	rm -f *.img
+	rm -f *.bin
+	rm -f includes/*.o
