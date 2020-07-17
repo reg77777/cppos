@@ -4,9 +4,9 @@
 template<typename T>
 class vector{
   private:
-    int size,array_size;
     T*array;
   public:
+    int size,array_size;
     vector():size(0),array_size(1){
       array=new T[array_size];
     };

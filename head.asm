@@ -1,3 +1,5 @@
+org 0xc200
+
 botpack equ 0x00280000
 dskcac  equ 0x00100000
 dskcac0 equ 0x00008000
@@ -8,8 +10,6 @@ vmode equ 0x0ff2
 scrnx equ 0x0ff4
 scrny equ 0x0ff6
 vram  equ 0x0ff8
-
-org 0xc200
 
 graphic_setting:
   mov al,0x13

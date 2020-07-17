@@ -1,8 +1,24 @@
-#include "includes/screen.h"
-#include "includes/asmfunc.h"
+#include "module/include/screen.h"
+#include "module/include/asmfunc.h"
+#include "module/include/gdt.h"
+#include "module/include/idt.h"
+#include "module/include/fifo.h"
+#include <stdint.h>
 
-int main(){
+FIFO key;
+
+extern "C" int main(){
+  GDTs gdts;
+  IDTs idts;
+
+  io_sti();
   Screen screen;
-  screen.font_write('A',0,0,0);
-  while(true)hlt();
+
+  for(;;){
+    io_cli();
+    if(key.have_buf())screen.cli_input(key.pop());
+    else io_stihlt();
+  }
+
+  return 0;
 }

@@ -1,0 +1,213 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+%.o	makefile	/^%.o: %.cpp$/;"	t
+ADR_BOTPAK	includes/gdt.cpp	/^#define ADR_BOTPAK /;"	d	file:
+ADR_GDT	includes/gdt.cpp	/^#define ADR_GDT /;"	d	file:
+ADR_IDT	includes/idt.h	/^#define ADR_IDT /;"	d
+AR_CODE32_ER	includes/gdt.cpp	/^#define AR_CODE32_ER /;"	d	file:
+AR_DATA32_RW	includes/gdt.cpp	/^#define AR_DATA32_RW /;"	d	file:
+AR_INTGATE32	includes/idt.h	/^#define AR_INTGATE32 /;"	d
+BOOTPACK	makefile	/^BOOTPACK=main.o includes\/screen.o includes\/gdt.o includes\/idt.o includes\/fifo.o includes\/fu/;"	m
+FIFO	includes/fifo.cpp	/^FIFO::FIFO(){$/;"	f	class:FIFO
+FIFO	includes/fifo.h	/^struct FIFO{$/;"	s
+GDT	includes/gdt.h	/^struct GDT{$/;"	s
+GDTs	includes/gdt.cpp	/^GDTs::GDTs(){$/;"	f	class:GDTs
+GDTs	includes/gdt.h	/^class GDTs{$/;"	c
+IDT	includes/idt.h	/^struct IDT{$/;"	s
+IDTs	includes/idt.cpp	/^IDTs::IDTs(){$/;"	f	class:IDTs
+IDTs	includes/idt.h	/^class IDTs{$/;"	c
+INCLUDE_ASMFUNC	includes/asmfunc.h	/^#define INCLUDE_ASMFUNC$/;"	d
+INCLUDE_FIFO	includes/fifo.h	/^#define INCLUDE_FIFO$/;"	d
+INCLUDE_GDT	includes/gdt.h	/^#define INCLUDE_GDT$/;"	d
+INCLUDE_IDT	includes/idt.h	/^#define INCLUDE_IDT$/;"	d
+INCLUDE_SCREEN	includes/screen.h	/^#define INCLUDE_SCREEN$/;"	d
+INCLUDE_VECTOR	includes/vector.h	/^#define INCLUDE_VECTOR$/;"	d
+KBC_MODE	main.cpp	/^#define KBC_MODE /;"	d	file:
+KEYCMD_SENDTO_MOUSE	main.cpp	/^#define KEYCMD_SENDTO_MOUSE /;"	d	file:
+KEYCMD_WRITE_MODE	main.cpp	/^#define KEYCMD_WRITE_MODE /;"	d	file:
+KEYSTA_SEND_NOTREADY	main.cpp	/^#define KEYSTA_SEND_NOTREADY /;"	d	file:
+LIMIT_BOTPAK	includes/gdt.cpp	/^#define LIMIT_BOTPAK /;"	d	file:
+LIMIT_GDT	includes/gdt.cpp	/^#define LIMIT_GDT /;"	d	file:
+LIMIT_IDT	includes/idt.h	/^#define LIMIT_IDT /;"	d
+MOUSECMD_ENABLE	main.cpp	/^#define MOUSECMD_ENABLE /;"	d	file:
+PIC0_ICW1	includes/idt.h	/^#define PIC0_ICW1	/;"	d
+PIC0_ICW2	includes/idt.h	/^#define PIC0_ICW2	/;"	d
+PIC0_ICW3	includes/idt.h	/^#define PIC0_ICW3	/;"	d
+PIC0_ICW4	includes/idt.h	/^#define PIC0_ICW4	/;"	d
+PIC0_IMR	includes/idt.h	/^#define PIC0_IMR	/;"	d
+PIC0_OCW2	includes/idt.h	/^#define PIC0_OCW2	/;"	d
+PIC1_ICW1	includes/idt.h	/^#define PIC1_ICW1	/;"	d
+PIC1_ICW2	includes/idt.h	/^#define PIC1_ICW2	/;"	d
+PIC1_ICW3	includes/idt.h	/^#define PIC1_ICW3	/;"	d
+PIC1_ICW4	includes/idt.h	/^#define PIC1_ICW4	/;"	d
+PIC1_IMR	includes/idt.h	/^#define PIC1_IMR	/;"	d
+PIC1_OCW2	includes/idt.h	/^#define PIC1_OCW2	/;"	d
+PORT_KEYCMD	main.cpp	/^#define PORT_KEYCMD /;"	d	file:
+PORT_KEYDAT	includes/idt.h	/^#define PORT_KEYDAT /;"	d
+PORT_KEYDAT	main.cpp	/^#define PORT_KEYDAT /;"	d	file:
+PORT_KEYSTA	main.cpp	/^#define PORT_KEYSTA /;"	d	file:
+Screen	includes/screen.cpp	/^Screen::Screen(){$/;"	f	class:Screen
+Screen	includes/screen.h	/^class Screen{$/;"	c
+X	includes/easy_fonts.cpp	/^#define X /;"	d	file:
+_	includes/easy_fonts.cpp	/^#define _ /;"	d	file:
+access_right	includes/gdt.h	/^  char base_mid,access_right;$/;"	m	struct:GDT	typeref:typename:char
+access_right	includes/idt.h	/^  char dw_count,access_right;$/;"	m	struct:IDT	typeref:typename:char
+add	bootloader.asm	/^    add dh,1$/;"	d
+array	includes/vector.h	/^    T*array;$/;"	m	class:vector	typeref:typename:T *
+array_size	includes/vector.h	/^    int size,array_size;$/;"	m	class:vector	typeref:typename:int
+asm_inthandler21	includes/asmfunc.cpp	/^void asm_inthandler21(){$/;"	f	typeref:typename:void
+asm_inthandler21	includes/func.asm	/^asm_inthandler21:$/;"	l
+base_high	includes/gdt.h	/^  char limit_high,base_high;$/;"	m	struct:GDT	typeref:typename:char
+base_low	includes/gdt.h	/^  short limit_low,base_low;$/;"	m	struct:GDT	typeref:typename:short
+base_mid	includes/gdt.h	/^  char base_mid,access_right;$/;"	m	struct:GDT	typeref:typename:char
+begin	includes/vector.h	/^    T*begin(){return 0;};$/;"	f	class:vector	typeref:typename:T *
+bootloader.bin	makefile	/^bootloader.bin: bootloader.asm$/;"	t
+bootpack.bin	makefile	/^bootpack.bin: $(BOOTPACK)$/;"	t
+botpack	head.asm	/^botpack equ 0x00280000$/;"	d
+c	bootloader.asm	/^c equ 10$/;"	d
+change_mode	head.asm	/^change_mode:$/;"	l
+clean	makefile	/^clean:$/;"	t
+cmp	bootloader.asm	/^    cmp dh,2$/;"	d
+cursor_write	includes/screen.cpp	/^void Screen::cursor_write(int x,int y){$/;"	f	class:Screen	typeref:typename:void
+cyls	head.asm	/^cyls  equ 0x0ff0$/;"	d
+data	includes/fifo.h	/^  char data[32];$/;"	m	struct:FIFO	typeref:typename:char[32]
+db	bootloader.asm	/^db "BOOTLOAD"$/;"	l
+db	bootloader.asm	/^db "FAT12   "     $/;"	l
+db	bootloader.asm	/^db "MYSUGOIOS  "$/;"	l
+db	bootloader.asm	/^db 0,0,0x29$/;"	l
+db	bootloader.asm	/^db 0x55,0xaa$/;"	l
+db	bootloader.asm	/^db 0x90$/;"	l
+db	bootloader.asm	/^db 0xf0$/;"	l
+db	bootloader.asm	/^db 1$/;"	l
+db	bootloader.asm	/^db 2$/;"	l
+dd	bootloader.asm	/^dd 0$/;"	l
+dd	bootloader.asm	/^dd 0xffffffff     $/;"	l
+dd	bootloader.asm	/^dd 2880 $/;"	l
+dskcac	head.asm	/^dskcac  equ 0x00100000$/;"	d
+dskcac0	head.asm	/^dskcac0 equ 0x00008000$/;"	d
+dw	bootloader.asm	/^dw 1$/;"	l
+dw	bootloader.asm	/^dw 18$/;"	l
+dw	bootloader.asm	/^dw 2$/;"	l
+dw	bootloader.asm	/^dw 224$/;"	l
+dw	bootloader.asm	/^dw 2880$/;"	l
+dw	bootloader.asm	/^dw 512$/;"	l
+dw	bootloader.asm	/^dw 9$/;"	l
+dw_count	includes/idt.h	/^  char dw_count,access_right;$/;"	m	struct:IDT	typeref:typename:char
+easy_fonts	includes/easy_fonts.cpp	/^unsigned char easy_fonts[4096] = {$/;"	v	typeref:typename:unsigned char[4096]
+end	includes/vector.h	/^    T*end(){return this->array+size;};$/;"	f	class:vector	typeref:typename:T *
+entry	bootloader.asm	/^entry:$/;"	l
+extern	includes/func.asm	/^extern inthandler21$/;"	l
+fill	includes/screen.cpp	/^void Screen::fill(int x1,int y1,int x2,int y2,int color){$/;"	f	class:Screen	typeref:typename:void
+font_fill	includes/screen.cpp	/^void Screen::font_fill(int x,int y){$/;"	f	class:Screen	typeref:typename:void
+font_sizex	includes/screen.h	/^    int font_sizex=8;$/;"	m	class:Screen	typeref:typename:int
+font_sizey	includes/screen.h	/^    int font_sizey=16;$/;"	m	class:Screen	typeref:typename:int
+font_write	includes/screen.cpp	/^void Screen::font_write(char c,int x,int y,int color){$/;"	f	class:Screen	typeref:typename:void
+gdt0	head.asm	/^gdt0:$/;"	l
+gdtr0	head.asm	/^gdtr0:$/;"	l
+get_keyboard	head.asm	/^get_keyboard:$/;"	l
+global	includes/func.asm	/^global asm_inthandler21$/;"	l
+global	includes/func.asm	/^global io_hlt,io_cli,io_sti,io_stihlt$/;"	l
+global	includes/func.asm	/^global io_in8$/;"	l
+global	includes/func.asm	/^global io_out8$/;"	l
+global	includes/func.asm	/^global load_idtr,load_gdtr$/;"	l
+graphic_setting	head.asm	/^graphic_setting:$/;"	l
+have_buf	includes/fifo.cpp	/^bool FIFO::have_buf(){$/;"	f	class:FIFO	typeref:typename:bool
+head.bin	makefile	/^head.bin: head.asm$/;"	t
+includes/func.o	makefile	/^includes\/func.o: includes\/func.asm$/;"	t
+initial_color	includes/screen.h	/^    char initial_color=4;$/;"	m	class:Screen	typeref:typename:char
+inthandler21	includes/idt.cpp	/^void inthandler21(int*esp){$/;"	f	typeref:typename:void
+io_cli	includes/asmfunc.cpp	/^void io_cli(){$/;"	f	typeref:typename:void
+io_cli	includes/func.asm	/^io_cli:$/;"	l
+io_hlt	includes/asmfunc.cpp	/^void io_hlt(){$/;"	f	typeref:typename:void
+io_hlt	includes/func.asm	/^io_hlt:$/;"	l
+io_in8	includes/asmfunc.cpp	/^int io_in8(int port){$/;"	f	typeref:typename:int
+io_in8	includes/func.asm	/^io_in8:$/;"	l
+io_out8	includes/asmfunc.cpp	/^void io_out8(int port,int data){$/;"	f	typeref:typename:void
+io_out8	includes/func.asm	/^io_out8:$/;"	l
+io_sti	includes/asmfunc.cpp	/^void io_sti(){$/;"	f	typeref:typename:void
+io_sti	includes/func.asm	/^io_sti:$/;"	l
+io_stihlt	includes/asmfunc.cpp	/^void io_stihlt(){$/;"	f	typeref:typename:void
+io_stihlt	includes/func.asm	/^io_stihlt:$/;"	l
+io_store_eflags	includes/asmfunc.cpp	/^void io_store_eflags(int eflags){$/;"	f	typeref:typename:void
+jmp	bootloader.asm	/^jmp 0xc200$/;"	l
+jmp	bootloader.asm	/^jmp entry$/;"	l
+key	main.cpp	/^FIFO key;$/;"	v	typeref:typename:FIFO
+leds	head.asm	/^leds  equ 0x0ff1$/;"	d
+limit_high	includes/gdt.h	/^  char limit_high,base_high;$/;"	m	struct:GDT	typeref:typename:char
+limit_low	includes/gdt.h	/^  short limit_low,base_low;$/;"	m	struct:GDT	typeref:typename:short
+load_cr0	includes/asmfunc.cpp	/^int load_cr0(){$/;"	f	typeref:typename:int
+load_eflags	includes/asmfunc.cpp	/^int load_eflags(){$/;"	f	typeref:typename:int
+load_gdtr	includes/asmfunc.cpp	/^void load_gdtr(int limit,int addr){$/;"	f	typeref:typename:void
+load_gdtr	includes/func.asm	/^load_gdtr:$/;"	l
+load_idtr	includes/asmfunc.cpp	/^void load_idtr(int limit,int addr){$/;"	f	typeref:typename:void
+load_idtr	includes/func.asm	/^load_idtr:$/;"	l
+loop1	bootloader.asm	/^loop1:$/;"	l
+loop2	bootloader.asm	/^  loop2:$/;"	l
+loop3	bootloader.asm	/^    loop3:$/;"	l
+main	includes/test/fifo_test.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	main.cpp	/^extern "C" int main(){$/;"	f	typeref:typename:int
+memcpy	head.asm	/^memcpy:$/;"	l
+mov	bootloader.asm	/^  mov dh,0$/;"	d
+mov	bootloader.asm	/^mov [0x0ff0],ch$/;"	l
+mov	bootloader.asm	/^mov ax,0$/;"	l
+mov	bootloader.asm	/^mov ax,0x0820$/;"	l
+mov	bootloader.asm	/^mov bx,0$/;"	l
+mov	bootloader.asm	/^mov ch,0$/;"	l
+mov	bootloader.asm	/^mov cl,2$/;"	l
+mov	bootloader.asm	/^mov dl,0x00$/;"	d
+mov	bootloader.asm	/^mov ds,ax$/;"	d
+mov	bootloader.asm	/^mov es,ax$/;"	l
+mov	bootloader.asm	/^mov sp,0x7c00$/;"	l
+mov	bootloader.asm	/^mov ss,ax$/;"	l
+mov	head.asm	/^  mov ds,ax$/;"	d
+mov	includes/func.asm	/^  mov ds,ax$/;"	d
+offset_high	includes/idt.h	/^  short offset_high;$/;"	m	struct:IDT	typeref:typename:short
+offset_low	includes/idt.h	/^  short offset_low,selector;$/;"	m	struct:IDT	typeref:typename:short
+operator []	includes/vector.h	/^    T operator[](int i){$/;"	f	class:vector	typeref:typename:T
+org	bootloader.asm	/^org 0x7c00$/;"	l
+org	head.asm	/^org 0xc200$/;"	l
+os	head.asm	/^os:$/;"	l
+os.img	makefile	/^os.img: bootloader.bin os.sys$/;"	t
+os.sys	makefile	/^os.sys: head.bin bootpack.bin$/;"	t
+out	includes/func.asm	/^  out dx,al$/;"	d
+pic_init	includes/idt.cpp	/^void IDTs::pic_init(){$/;"	f	class:IDTs	typeref:typename:void
+pipeline_flush	head.asm	/^pipeline_flush:$/;"	l
+pop	includes/fifo.cpp	/^char FIFO::pop(){$/;"	f	class:FIFO	typeref:typename:char
+pop	includes/func.asm	/^  pop ds$/;"	d
+print	includes/screen.cpp	/^void Screen::print(char*c,int x,int y,int color){$/;"	f	class:Screen	typeref:typename:void
+print_num	includes/screen.cpp	/^void Screen::print_num(unsigned int n,int x,int y,int color){$/;"	f	class:Screen	typeref:typename:void
+ptr_r	includes/fifo.h	/^  int ptr_r=0;$/;"	m	struct:FIFO	typeref:typename:int
+ptr_w	includes/fifo.h	/^  int ptr_w=0;$/;"	m	struct:FIFO	typeref:typename:int
+push	includes/fifo.cpp	/^void FIFO::push(int val){$/;"	f	class:FIFO	typeref:typename:void
+push	includes/func.asm	/^  push ds$/;"	d
+push_back	includes/vector.h	/^    void push_back(T val){$/;"	f	class:vector	typeref:typename:void
+run	makefile	/^run: os.img$/;"	t
+s	includes/easy_fonts.cpp	/^#define s /;"	d	file:
+scrnx	head.asm	/^scrnx equ 0x0ff4$/;"	d
+scrny	head.asm	/^scrny equ 0x0ff6$/;"	d
+selector	includes/idt.h	/^  short offset_low,selector;$/;"	m	struct:IDT	typeref:typename:short
+set_gdt	includes/gdt.cpp	/^void GDTs::set_gdt(GDT*gdts,unsigned int limit,int base,int ar){$/;"	f	class:GDTs	typeref:typename:void
+set_idt	includes/idt.cpp	/^void IDTs::set_idt(IDT*idts,int offset,int selector,int ar){$/;"	f	class:IDTs	typeref:typename:void
+size	includes/vector.h	/^    int size,array_size;$/;"	m	class:vector	typeref:typename:int
+sizex	includes/screen.h	/^    short sizex=*((short*)0x0ff4);$/;"	m	class:Screen	typeref:typename:short
+sizey	includes/screen.h	/^    short sizey=*((short*)0x0ff6);$/;"	m	class:Screen	typeref:typename:short
+skip	head.asm	/^skip:$/;"	l
+stop_interrupt	head.asm	/^  stop_interrupt:$/;"	l
+store_cr0	includes/asmfunc.cpp	/^void store_cr0(int cr0){$/;"	f	typeref:typename:void
+times	bootloader.asm	/^times 0x7dfe-0x7c00-($-$$) db 0$/;"	l
+times	bootloader.asm	/^times 18 db 0$/;"	l
+vector	includes/vector.h	/^    vector():size(0),array_size(1){$/;"	f	class:vector
+vector	includes/vector.h	/^    vector(T array[]){$/;"	f	class:vector
+vector	includes/vector.h	/^    vector(int size):size(size){$/;"	f	class:vector
+vector	includes/vector.h	/^class vector{$/;"	c
+vmode	head.asm	/^vmode equ 0x0ff2$/;"	d
+vram	head.asm	/^vram  equ 0x0ff8$/;"	d
+vram	includes/screen.h	/^    char*vram=*((char**)0x0ff8);$/;"	m	class:Screen	typeref:typename:char *
+wait_keyboard	head.asm	/^wait_keyboard:$/;"	l
+write	includes/screen.cpp	/^void Screen::write(int x,int y,int color){$/;"	f	class:Screen	typeref:typename:void
+write_mem8	includes/asmfunc.cpp	/^void write_mem8(int addr,int data){$/;"	f	typeref:typename:void

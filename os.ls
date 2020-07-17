@@ -1,5 +1,4 @@
 OUTPUT_FORMAT("binary");
-
 OUTPUT_ARCH(i386)
 
 SECTIONS{
@@ -15,7 +14,9 @@ SECTIONS{
 			LONG(0x01)
 	}
 
-	.text : { *(.text)}
+	.text : {
+    *(.text*)
+  }
 
 	.data 0x310000 : AT ( ADDR(.text) + SIZEOF(.text) ){
 			*(.data)
@@ -23,7 +24,8 @@ SECTIONS{
 			*(.bss)
 	}
 
-	/DISCARD/ : { *(.eh_frame) }
+  /DISCARD/ : {
+    *(.eh_frame)
+  }
 
 }
-

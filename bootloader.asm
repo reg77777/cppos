@@ -1,5 +1,5 @@
-c equ 10
 org 0x7c00
+c equ 10
 
 jmp entry
 
